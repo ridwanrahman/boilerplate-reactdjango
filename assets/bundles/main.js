@@ -54,12 +54,14 @@
 	        return React.createElement(
 	            'h1',
 	            null,
-	            'Hello, React!'
+	            'Hello, asdfsdf!'
 	        );
 	    }
 	});
 
 	ReactDOM.render(React.createElement(Hello, null), document.getElementById('container'));
+
+	ReactDOM.render(React.createElement(Hello, null), document.getElementById('dell'));
 
 /***/ },
 /* 1 */

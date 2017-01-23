@@ -1,6 +1,8 @@
 {% extends "base/index.html" %}
+{% load staticfiles %}
 
 {% block content %}
+
 {% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html>
@@ -9,8 +11,11 @@
     </head>
     <body>
         <div id="container"></div>
-        {% render_bundle 'main' %}
+        
+
+        <div id="dell"></div>
     </body>
+    <script src = "{% static 'bundles/main.js' %}"></script>
 </html>
 
 {% endblock %}
