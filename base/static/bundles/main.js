@@ -48,20 +48,32 @@
 	var ReactDOM = __webpack_require__(32);
 
 	var Hello = React.createClass({
-	    displayName: 'Hello',
+	  displayName: 'Hello',
 
-	    render: function () {
-	        return React.createElement(
-	            'h1',
-	            null,
-	            'Hello, asdfsdf!'
-	        );
-	    }
+	  render: function () {
+	    return React.createElement(
+	      'h1',
+	      null,
+	      'Hello, asdfsdf!'
+	    );
+	  }
+	});
+
+	var Greetings = React.createClass({
+	  displayName: 'Greetings',
+
+	  render: function () {
+	    return React.createElement(
+	      'h2',
+	      null,
+	      'this is test'
+	    );
+	  }
 	});
 
 	ReactDOM.render(React.createElement(Hello, null), document.getElementById('container'));
 
-	ReactDOM.render(React.createElement(Hello, null), document.getElementById('dell'));
+	ReactDOM.render(React.createElement(Greetings, null), document.getElementById('dell'));
 
 /***/ },
 /* 1 */

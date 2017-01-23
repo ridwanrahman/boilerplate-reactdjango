@@ -11,8 +11,21 @@ var Hello = React.createClass ({
     }
 })
 
+var Greetings = React.createClass({
+	render: function(){
+		return(
+			<h2>
+				this is test
+			</h2>
+
+		)
+	}
+})
+
+
+
 ReactDOM.render(<Hello />, document.getElementById('container'))
 
 
-ReactDOM.render(<Hello />, document.getElementById('dell'))
+ReactDOM.render(<Greetings />, document.getElementById('dell'))
 
